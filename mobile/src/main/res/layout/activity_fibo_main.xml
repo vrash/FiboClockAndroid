@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    tools:context=".FiboMainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <Button android:id="@+id/btn_reveal_time" style="?metaButtonBarButtonStyle"
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:text="@string/dummy_button"
+        android:textColor="#ffffff"
+        android:background="#33b5e5"
+        android:onClick="showTime"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp" />
+    <Button android:id="@+id/share_time_with_friends" style="?metaButtonBarButtonStyle"
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:text="@string/share_with_friends"
+        android:textColor="#ffffff"
+        android:background="#33b5e5"
+        android:onClick="shareOnFB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:id="@+id/testtimers"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp" />
+
+    <View
+        android:id="@+id/fivesquare"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/border"
+
+        android:layout_alignTop="@+id/twosquare"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:id="@+id/onesqaure"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+
+        android:layout_alignTop="@+id/fivesquare"
+        android:layout_toStartOf="@+id/fivesquare" />
+    <View
+        android:id="@+id/otheronesquare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+
+        android:layout_toStartOf="@id/fivesquare"
+        android:layout_marginTop="129dp" />
+    <View
+        android:id="@+id/twosquare"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/border"
+
+        android:layout_alignBottom="@+id/otheronesquare"
+        android:layout_alignStart="@+id/threesquare" />
+    <View
+        android:id="@+id/threesquare"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/border"
+        android:layout_alignBottom="@id/fivesquare"
+        android:layout_alignEnd="@id/onesqaure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="@color/blue"
+        android:textStyle="italic"
+        android:id="@+id/text_current_time"
+        android:visibility="gone"
+        android:layout_above="@+id/btn_reveal_time"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

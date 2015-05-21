@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FiboClock</string>
+
+    <string name="dummy_button">Reveal Time</string>
+    <string name="share_with_friends">Share on Facebook!</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="facebook_app_id">379483348921507</string>
+    <string name="facebook_app_secret">e3b8492086f00073f9573a486bddf896</string>
+</resources>
